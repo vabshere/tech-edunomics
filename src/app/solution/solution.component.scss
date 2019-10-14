@@ -1,0 +1,242 @@
+* {
+
+  box-sizing: border-box;
+
+}
+.outline{
+
+  border: 2px solid red;
+
+  width: 30%;
+
+}
+
+
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+/* Float four columns side by side */
+
+.column {
+
+  float: right;
+
+  width: 25%;
+
+  padding: 0 10px;
+
+}
+
+
+
+/* Remove extra left and right margins, due to padding */
+
+.row {margin: 0 -5px;}
+
+
+
+/* Clear floats after the columns */
+
+.row:after {
+
+  content: "";
+
+  display: table;
+
+  clear: both;
+
+}
+
+input[type=text]{
+  margin-left:10px;
+}
+.con{
+  margin-right:20px;
+  margin-bottom:20px;
+}
+// button{
+//   margin-left:10px;
+//   margin-bottom:30px;
+// }
+.bbt{
+  margin-top:0px;
+  border-radius:25px;
+  margin-left: 30px;
+  margin-bottom:0px;
+}
+
+/* Responsive columns */
+
+@media screen and (max-width: 600px) {
+
+  .column {
+
+    width: 100%;
+
+    display: block;
+
+    margin-bottom: 20px;
+
+  }
+
+}
+
+
+
+  /* Style the counter cards */
+
+  .card {
+
+
+
+    padding: 16px;
+
+    text-align: center;
+
+    background-color: white;
+
+
+
+  }
+
+  
+
+  .outline1{
+    border: 2px solid red;
+    width: 15%;
+    margin-bottom:30px;
+  }
+
+  .outline3{
+
+    border: 2px solid red;
+
+    width: 15%;
+
+    
+
+  }
+
+// footer 
+
+/* Footer css */
+footer {
+  background: #343a40;
+  padding-top:40px;
+  margin-top:40px;
+  overflow: hidden;
+}
+footer a {
+  color: #f8f9fa!important;
+  
+}
+.edu{
+  margin-left:50px;
+  color:#fff;
+  margin-top:170px;
+}
+
+h5{
+  margin-bottom:20px;
+}
+// .list-unstyled ,h5{
+//     text-align: center;
+// }
+.hhrr{
+  background: rgb(97, 94, 94);
+  width: 1px;
+}
+.row.vdivide [class*='col-']:not(:last-child):after {
+  background: rgb(97, 94, 94);
+  width: 1px;
+  content: "";
+  display:block;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  min-height: 70px;
+}
+li{
+    padding:10px;
+}
+.list-inline-item{
+    padding:0px;
+   
+}
+.lu{
+  margin-left:30px;
+  margin-top:170px;
+}
+hr{
+  background:rgb(97, 94, 94);
+}
+.f2{
+    display:none;
+}
+.f1{
+    display:block;
+}
+.last1{
+  display: none;
+}
+
+@media screen and (max-width:600px){
+   //footer
+   .f1{
+    display:none;
+}
+.f2{
+    display:block;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+input[type=text]{
+  margin-bottom:20px;
+}
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 40px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row1{
+      margin-bottom: 30px;
+  }
+
+  .last1{
+    display: block;
+    background-color:#000;
+ 
+    
+  }
+.whats{
+font-size:30px;
+margin-left:120px;
+padding:10px;
+color:#0f0;
+}
+.phone{
+  font-size:30px;
+  margin-left:100px;
+  padding:10px;
+  color:#0f0;
+}
+
+}

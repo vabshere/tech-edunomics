@@ -1,0 +1,119 @@
+.pp {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .qq {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+  .outline{
+
+    border: 2px solid red;
+  
+    width: 30%;
+  
+  }
+    
+/* Footer css */
+footer {
+  background: #343a40;
+  padding-top:40px;
+  margin-top:40px;
+  overflow: hidden;
+}
+footer a {
+  color: #f8f9fa!important;
+  
+}
+.edu{
+  margin-left:250px;
+}
+
+h5{
+  margin-bottom:20px;
+}
+// .list-unstyled ,h5{
+//     text-align: center;
+// }
+.hhrr{
+  background: #e0e0e0;
+  width: 1px;
+}
+.row.vdivide [class*='col-']:not(:last-child):after {
+  background: #e0e0e0;
+  width: 1px;
+  content: "";
+  display:block;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  min-height: 70px;
+}
+hr{
+  background: #e0e0e0; 
+}
+.f2{
+    display:none;
+}
+.f1{
+    display:block;
+}
+.last1{
+  display: none;
+}
+
+@media screen and (max-width:600px){
+   //footer
+   .f1{
+    display:none;
+}
+.f2{
+    display:block;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 40px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row1{
+      margin-bottom: 30px;
+  }
+
+  .last1{
+    display: block;
+    background-color:#000;
+ 
+    
+  }
+.whats{
+font-size:30px;
+margin-left:120px;
+padding:10px;
+color:#0f0;
+}
+.phone{
+  font-size:30px;
+  margin-left:100px;
+  padding:10px;
+  color:#0f0;
+}
+
+}
+  

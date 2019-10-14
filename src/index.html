@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>EdunomicsTech</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="./assets/image/edo.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!------ Include the above in your HEAD tag ---------->
+  
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EJV3QH4H1K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EJV3QH4H1K');
+</script>
+
+</head>
+<body>
+    
+  <script>
+    $(window).scroll(function() {
+  if($(this).scrollTop() > 100)  /*height in pixels when the navbar becomes non opaque*/ 
+  {
+      $('.opaque-navbar').addClass('opaque');
+  } else {
+      $('.opaque-navbar').removeClass('opaque');
+  }
+});
+    </script>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "160px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+
+<script>
+
+    jQuery(document).ready(function($){
+  
+      var $timeline_block = $('.cd-timeline-block');
+  
+   
+  
+      //hide timeline blocks which are outside the viewport
+  
+      $timeline_block.each(function(){
+  
+          if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+  
+              $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+  
+          }
+  
+      });
+  
+   
+  
+      //on scolling, show/animate timeline blocks when enter the viewport
+  
+      $(window).on('scroll', function(){
+  
+          $timeline_block.each(function(){
+  
+              if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+  
+                  $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+  
+              }
+  
+          });
+  
+      });
+  
+  });
+  
+  </script>
+ <script>
+ $(window).scroll(function (event) {
+    var y = $(this).scrollTop();
+
+    if (y <= 500) {
+        $('#my-div').addClass('animated');
+    }
+    else
+    {
+        $('#my-div').removeClass('animated');                
+    }
+});
+ </script>
+
+<!-- Scroll spy -->
+<script>
+$("#navv a[href^='#']").on('click', function(e) {
+
+  // prevent default anchor click behavior
+  e.preventDefault();
+
+  // store hash
+  var hash = this.hash;
+
+  // animate
+  $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 1000, function(){
+
+      // when done, add hash to url
+      // (default click behaviour)
+      window.location.hash = hash;
+    });
+
+});
+</script>
+
+<script>
+/*Interactivity to determine when an animated element in in view. In view elements trigger our animation*/
+$(document).ready(function() {
+
+//window and animation items
+var animation_elements = $.find('.animation-element');
+var web_window = $(window);
+
+//check to see if any animation containers are currently in view
+function check_if_in_view() {
+  //get current window information
+  var window_height = web_window.height();
+  var window_top_position = web_window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  //iterate through elements to see if its in view
+  $.each(animation_elements, function() {
+
+    //get the element sinformation
+    var element = $(this);
+    var element_height = $(element).outerHeight();
+    var element_top_position = $(element).offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    //check to see if this current container is visible (its viewable if it exists between the viewable space of the viewport)
+    if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+      element.addClass('in-view');
+    } else {
+      element.removeClass('in-view');
+    }
+  });
+
+}
+
+//on or scroll, detect elements in view
+$(window).on('scroll resize', function() {
+    check_if_in_view()
+  })
+  //trigger our scroll event on initial load
+$(window).trigger('scroll');
+
+});
+</script>
+
+
+  <app-root></app-root>
+</body>
+</html>

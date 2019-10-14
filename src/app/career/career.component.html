@@ -1,0 +1,601 @@
+<body>
+  <section
+    class="jumbotron text-center"
+    style="background-color: #005688;color: white"
+  >
+    <div class="container">
+      <h1 class="jumbotron-heading" style="margin-top: 35px;"><b>Career</b></h1>
+
+      <hr class="outline" />
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <p class="para" style="font-size: 35px"><b>Careers at Edunomics</b></p>
+
+      <p class="pp">
+        At Edunomics, we pride ourselves on building powerful, sophisticated
+        software that’s fun and easy to use. <br />
+        We believe that customers are the foundation of a successful business
+        and we want to enable every team to deliver<br />
+        moments of wow to them.<br /><br />
+        We are constantly on the lookout for smart people who are passionate
+        about building great products, <br />
+        designing great experiences, building scalable platforms, and making
+        customers happy. If this describes you,<br />
+        feel free to take a look at our openings below and apply!
+      </p>
+      <div class="text-center">
+        <button
+          type="button"
+          style="font-size:20px;"
+          class="btn bbt btn-outline-blue btn-rounded waves-effect"
+        >
+          VIEW OPENING
+        </button>
+      </div>
+    </div>
+  </section>
+  <div class="container text-center">
+    <h1 class="qq"><b>The Edunomics Culture</b></h1>
+    <p style="font-size: 20px">
+      <b>What we believe in and what we stand for</b>
+    </p>
+
+    <div
+      class="row pt-5"
+      *ngFor="let row of rows | async"
+      style="display: flex; justify-content: center;"
+    >
+      <div class="col-sm-4" *ngFor="let card of row">
+        <img src="../../assets/image/26.jpg" />
+        <p style="font-size: 25px">
+          <b>{{ card.heading }}</b>
+        </p>
+
+        <p>
+          {{ card.para }}
+        </p>
+      </div>
+    </div>
+
+    <!-- <div class="row pt-5">
+      <div class="col-sm-4">
+        <img src="../../assets/image/26.jpg" />
+        <p style="font-size: 25px"><b>Happy “work” environment</b></p>
+
+        <p>
+          The work we do doesn’t just pay the bills; it makes us happy. We
+          choose career paths that play to our strengths and work together to
+          make the office a collaborative, diverse environment.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <img src="../../assets/image/27.jpg" />
+        <p style="font-size: 25px"><b>Play as one team</b></p>
+        <p>
+          We put Edunomics first, over the team and individual, and take efforts
+          to build genuine relationships with our colleagues. Disagreements are
+          welcome as they help us uncover our blind spots and learn from
+          different perspectives.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <img src="../../assets/image/28.png" />
+        <p style="font-size: 25px"><b>Take ownership</b></p>
+        <p>
+          Our projects are ours to own; success or failure, we own what we do
+          and take responsibility for our actions. When frustrations arise, we
+          flip the switch and focus on solving the problem instead.
+        </p>
+      </div>
+    </div>
+    <div class="row pt-5">
+      <div class="col-sm-4">
+        <img src="../../assets/image/24.png" />
+        <p style="font-size: 25px"><b>Practice craftsmanship</b></p>
+        <p>
+          We strive to be world-class in everything we do. That’s why we sweat
+          the details till we ship stuff we’re proud to put our name on.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <img src="../../assets/image/29.png" />
+        <p style="font-size: 25px"><b>Take smart risks </b></p>
+        <p>
+          We pursue ideas that help us find newer, better and faster ways to
+          work. Some of these ideas might fail and that’s OK. We learn from the
+          failures and move on
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <img src="../../assets/image/31.png" />
+        <p style="font-size: 25px"><b>Act with urgency</b></p>
+        <p>
+          We’re focused on making quick decisions and executing fast. “How can
+          this be done sooner?” is the mantra which we live by.
+        </p>
+      </div>
+    </div>
+    <div class="row pt-5 pb-5">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-4">
+        <img src="../../assets/image/30.png" />
+        <p style="font-size: 25px"><b>Speak up</b></p>
+        <p>
+          We express our views in a open, proactive and respectful manner.
+          There’s no room for silent disagreements here. We encourage healthy
+          discussions and debates, and prefer to over-communicate rather than
+          stay silent.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <img src="../../assets/image/25.png" />
+        <p style="font-size: 25px"><b>Be a customer champion</b></p>
+        <p>
+          We’re always working to deliver great experiences to our customers. To
+          this end, we make it a point to connect with them, understand their
+          requirements and challenges, and do what’s right for the customer and
+          the company.
+        </p>
+      </div>
+      <div class="col-sm-2"></div>
+    </div> -->
+  </div>
+
+  <div class="container text-center pt-5 pb-5">
+    <h1 class="jumbotron-heading text-center"><b>Opening For</b></h1>
+    <button
+      type="button"
+      data-toggle="modal"
+      data-target="#ExampleModal"
+      style="font-size:20px;"
+      class="btn bbt btn-outline-blue btn-rounded waves-effect"
+    >
+      Current Opening
+    </button>
+
+    <button
+      type="button"
+      data-toggle="modal"
+      data-target="#basicExampleModal"
+      style="font-size:20px;"
+      class="btn bbt btn-outline-red btn-rounded waves-effect"
+    >
+      Internship
+    </button>
+  </div>
+  <!-- Button trigger modal -->
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="ExampleModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                aria-describedby="emailHelp"
+                placeholder="Enter name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+                required
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="mobile no.">Mobile no.</label>
+              <input
+                type="number"
+                class="form-control"
+                id="mobile no"
+                aria-describedby="emailHelp"
+                placeholder="Enter mobile no."
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="name">Experience</label>
+              <input
+                type="text"
+                class="form-control"
+                id="experience"
+                placeholder="Experience"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="name">Apply For Role</label>
+              <input
+                type="text"
+                class="form-control"
+                id="role"
+                placeholder="Apply for role"
+                required
+              />
+            </div>
+
+            <div class="mx-auto">
+              <button type="submit" class="btn btn-primary text-right">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal internship -->
+  <div
+    class="modal fade"
+    id="basicExampleModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                aria-describedby="emailHelp"
+                placeholder="Enter name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+                required
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="mobile no.">Mobile no.</label>
+              <input
+                type="number"
+                class="form-control"
+                id="mobile no"
+                aria-describedby="emailHelp"
+                placeholder="Enter mobile no."
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="name">Experience</label>
+              <input
+                type="text"
+                class="form-control"
+                id="experience"
+                placeholder="Experience"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="name">Apply For Role</label>
+              <input
+                type="text"
+                class="form-control"
+                id="role"
+                placeholder="Apply for role"
+                required
+              />
+            </div>
+
+            <div class="mx-auto">
+              <button type="submit" class="btn btn-primary text-right">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="text-light f1">
+    <div class="container-fluid">
+      <div class="row vdivide">
+        <div class="col-md-4 col-lg-4 col-xl-4">
+          <h5>BLOGS</h5>
+
+          <p style="color:white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+            sequi est sit quod
+          </p>
+          <br />
+          <p style="color:white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+            sequi est sit quod
+          </p>
+          <hr class="mx-auto" />
+          <div class="row">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4 ml-3">
+              Edunomics Tech Solution
+            </h5>
+            <p style="margin-left: 15%;color:white">contact@edunomics.in</p>
+          </div>
+          <hr />
+          <p style="margin-left: 15%;color:white">BUSINESS HOURS <br />24*7</p>
+          <hr />
+          <!-- Social buttons -->
+          <div class="row">
+            <span>
+              <p class="edu">2019 : Edunomics</p>
+            </span>
+            <div>
+              <ul class="list-unstyled lu list-inline text-center">
+                <li class="list-inline-item">
+                  <a mdbBtn floating="true" color="fb" mdbWavesEffect>
+                    <mdb-icon fab icon="facebook"></mdb-icon>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a mdbBtn floating="true" color="tw" mdbWavesEffect>
+                    <mdb-icon fab icon="twitter"></mdb-icon>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a mdbBtn floating="true" color="gplus" mdbWavesEffect>
+                    <mdb-icon fab fab icon="google-plus"></mdb-icon>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a mdbBtn floating="true" color="li" mdbWavesEffect>
+                    <mdb-icon fab icon="linkedin"></mdb-icon>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a mdbBtn floating="true" color="wh" mdbWavesEffect>
+                    <mdb-icon fab icon="whatsapp"></mdb-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Social buttons -->
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+          <h5>SERVICES</h5>
+
+          <ul class="list-unstyled">
+            <li><a routerLink="/come">Custom Software Development</a></li>
+            <li><a routerLink="/come"> Mobile Software Development</a></li>
+            <li><a routerLink="/come">Software Prototyping</a></li>
+            <li><a routerLink="/come"> Dedicated Development Teams</a></li>
+            <li><a routerLink="/come">Software Maintenance Program</a></li>
+            <li><a routerLink="/come">Software Product Development</a></li>
+            <li><a routerLink="/come">Quality Assurance</a></li>
+            <li><a routerLink="/come">Legacy Software Migration</a></li>
+            <li><a routerLink="/come"> DevOps Automation</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+          <h5>SOLUTIONS</h5>
+
+          <ul class="list-unstyled">
+            <li><a routerLink="/come">DMS</a></li>
+            <li><a routerLink="/come">SMS</a></li>
+            <li><a routerLink="/come">CMS</a></li>
+            <li><a routerLink="/come">IOT</a></li>
+            <li><a routerLink="/come">Mobile</a></li>
+            <li><a routerLink="/come">Web Applications</a></li>
+            <li><a routerLink="/come">Cost Finder</a></li>
+            <li><a routerLink="/come">Tracking</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a routerLink="/career">- Career</a></li>
+            <li>
+              <a routerLink="/Affiliate-Programme">- Affiliate Program</a>
+            </li>
+            <li><a routerLink="/about">- About Us</a></li>
+            <li><a routerLink="how-we-work">- How we work</a></li>
+            <li><a routerLink="/come">- Startups</a></li>
+            <li><a routerLink="/blog">- Blog</a></li>
+            <li><a routerLink="/whitepaper">- White Paper</a></li>
+            <li><a routerLink="/contact">- Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 ">
+          <h5>INDUSTRY</h5>
+
+          <ul class="list-unstyled">
+            <li><a routerLink="/come">Education</a></li>
+            <li><a routerLink="/come">Retail & Wholesale</a></li>
+            <li><a routerLink="/come">Construction</a></li>
+            <li><a routerLink="/come">Transpotation</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <hr />
+    <div class="navbar navbar-expand-md navbar-fixed-bottom">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/solution">Solution</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/service">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <footer class="text-light f2">
+    <div class="container">
+      <h5
+        class="font-weight-bold"
+        style="text-align: center;  margin-left:10px;"
+      >
+        Edunomics Tech Solution
+      </h5>
+      <h6 style="text-align: center;">9082626356</h6>
+      <h6 style="text-align: center;">Business Hours</h6>
+      <p style="text-align: center;">24*7</p>
+      <h6 style="text-align: center;">contact@edunomics.in</h6>
+      <hr />
+      <h5 class="font-weight-bold" style="text-align: center;">Quick Links</h5>
+      <a class="nav-link" routerLink="/about"
+        ><h6 style="text-align: center;">About Us</h6></a
+      >
+      <a class="nav-link" routerLink="/team"
+        ><h6 style="text-align: center;">Our Team</h6></a
+      >
+      <a class="nav-link" routerLink="/blog"
+        ><h6 style="text-align: center;">Our Blog</h6></a
+      >
+      <a class="nav-link" routerLink="/solution"
+        ><h6 style="text-align: center;">Solution</h6></a
+      >
+      <hr />
+
+      <!-- Social buttons -->
+      <div class="row row1">
+        <div class="col-sm-6 column">
+          <p class="">2019 : Edunomics</p>
+        </div>
+        <div class="col-sm-6 column">
+          <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+              <a mdbBtn floating="true" color="fb" mdbWavesEffect>
+                <mdb-icon fab icon="facebook"></mdb-icon>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a mdbBtn floating="true" color="tw" mdbWavesEffect>
+                <mdb-icon fab icon="twitter"></mdb-icon>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a mdbBtn floating="true" color="gplus" mdbWavesEffect>
+                <mdb-icon fab fab icon="google-plus"></mdb-icon>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a mdbBtn floating="true" color="li" mdbWavesEffect>
+                <mdb-icon fab icon="linkedin"></mdb-icon>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <!-- <a routerLink="#" mdbBtn floating="true" color="wh" mdbWavesEffect>
+        <mdb-icon fab icon="whatsapp"></mdb-icon>
+      </a> -->
+              <a href="https://wa.me/908262356" target="_blank"
+                ><mdb-icon class="whats" fab icon="whatsapp"></mdb-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Social buttons -->
+    </div>
+
+    <hr />
+    <!-- Copyright -->
+  </footer>
+  <div class="row last1 fixed-bottom">
+    <div class="col-sm-6">
+      <!-- <a mdbBtn floating="true" color="wh" mdbWavesEffect>
+            
+          </a>  -->
+      <a href="https://wa.me/908262356" target="_blank"
+        ><mdb-icon class="whats" fab icon="whatsapp"></mdb-icon
+      ></a>
+      <span>
+        <a mdbBtn floating="true" color="ph" mdbWavesEffect>
+          <mdb-icon class="phone" fas icon="phone-volume"></mdb-icon></a
+      ></span>
+    </div>
+  </div>
+</body>

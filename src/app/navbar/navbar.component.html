@@ -1,0 +1,58 @@
+<div class="pill-nav hide">
+<nav class="navbar navbar-expand-md fixed-top opaque-navbar">
+        <a class="navbar-brand" routerLink="/home"><img src="../../assets/image/edu (1).png" height="20%" width="50%"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0" >
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/solution">Solution</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/service">Services</a>
+        </li>
+        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" routerLink="/#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Company</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" routerLink="/about">About Us</a>
+                    <a class="dropdown-item" routerLink="/team">Our Team</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" routerLink="/#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Resources</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" routerLink="/blog">Blog</a>
+                        <a class="dropdown-item" routerLink="/whitepaper">WhitePaper</a>
+                        <a class="dropdown-item" routerLink="/casestudies">CaseStudies</a>
+                    </div>
+                </li>
+              <li class="nav-item">
+                    <a class="nav-link" routerLink="/contact">Contact</a>
+                  </li>
+
+      </ul>
+    </div>  
+  </nav>
+</div>
+<div class="container-fluid hide1 fixed-top" style="background-color: #000">
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn para" onclick="closeNav()">&times;</a>
+    <a routerLink="/home" class="abc"  onclick="closeNav()">Home</a>
+    <a routerLink="/solution" class="abc"  onclick="closeNav()">Solution</a>
+    <a routerLink="/service" class="abc" onclick="closeNav()">Services</a>
+  
+        <a class="dropdown-item abc" onclick="closeNav()" routerLink="/about">About Us</a>
+        <a class="dropdown-item abc" onclick="closeNav()" routerLink="/team">Our Team</a>
+  
+
+
+        <a class="dropdown-item abc" onclick="closeNav()" routerLink="/blog">Blog</a>
+        <a class="dropdown-item abc" onclick="closeNav()" routerLink="/whitepaper">WhitePaper</a>
+        <a class="dropdown-item abc" onclick="closeNav()" routerLink="/casestudies">CaseStudies</a>
+  
+    <a routerLink="/contact" class="abc" onclick="closeNav()">Contact</a>
+  </div>
+  <span style="font-size:30px;cursor:pointer;color:#fff;" onclick="openNav()">&#9776;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   </span>
+</div>

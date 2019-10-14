@@ -1,0 +1,142 @@
+
+.opaque-navbar {
+    background-color: transparent;
+    height: 60px;
+    border-bottom: 0px;
+    /* transition: background-color .5s ease 0s; */
+}
+a{
+  color:#fff;
+}
+
+.opaque-navbar.opaque {
+    background-color: black;
+    height: 60px;
+    
+    /* transition: background-color .5s ease 0s; */
+}
+a:hover{
+  color:rgb(201, 250, 238);
+}
+
+@media only screen and (max-width: 700px) {
+
+    .opaque-navbar {
+    
+        height: 0px;
+        border-bottom: 0px;
+        display:none;
+        /* transition: background-color .5s ease 0s; */
+    }
+    a{
+        color:rgb(201, 250, 238);
+    }
+    
+    .opaque-navbar.opaque {
+       
+        height:0px;
+        display: none;
+        
+        /* transition: background-color .5s ease 0s; */
+    }
+    .navbar{
+        background-color:#000;
+    }
+}
+
+ 
+.hide{
+    display: block;
+  }
+  
+  .hide1{
+    display: none;
+  
+  }
+  
+  .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 1px 1px 1px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .abc{
+  font-family: 'Times New Roman', Times, serif;
+    color:white;
+  }
+  
+  .abc:hover{
+    color:#BDE6CF;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .hide{
+        display: none;
+    }
+  
+    .hide1{
+        display: block;
+    }
+  }

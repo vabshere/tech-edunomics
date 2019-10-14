@@ -1,0 +1,608 @@
+<section
+  class="jumbotron text-center"
+  style="background-color: #005688;color: white"
+>
+  <div class="container">
+    <h1 class="jumbotron-heading" style="margin-top: 35px;">
+      <b>Building Innovative Software Solutions for Business</b>
+    </h1>
+
+    <hr class="outline" />
+  </div>
+</section>
+
+<div>
+  <h3 class="font-weight-bold text-center">Software Solutions We Build</h3>
+
+  <hr class="outline1" />
+  <br />
+
+  <p class="text-center" style="font-size:20px;">
+    We create high-performance, interactive, user-friendly applications helping
+    companies bring their business to a whole new level.
+  </p>
+  <p class="text-center" style="font-size:20px;">
+    Software focuses on the delivery of the apps designed to enhance the
+    clients' business.
+  </p>
+</div>
+<br /><br />
+
+<div class="container">
+  <div
+    class="row"
+    *ngFor="let row of rows | async"
+    style="margin-bottom: 15px; display: flex; justify-content: center;"
+  >
+    <div class="col-sm-4" *ngFor="let card of row">
+      <div class="card">
+        <div class="card-body text-center">
+          <img
+            [src]="card.img"
+            [alt]="card.imgAlt"
+            class="smt-link-card__img"
+          /><br />
+
+          <h5>{{ card.heading }}</h5>
+          <br />
+
+          <p>
+            {{ card.content }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <img
+            src="https://uploads-ssl.webflow.com/5c98c492f5786d415aa3c82d/5d2f169e46b3c515785da4d7_Enterprise%20Applications_hover.svg"
+            alt="application"
+            class="smt-link-card__img"
+          /><br />
+
+          <h5>ENTERPRISE APPLICATION</h5>
+          <br />
+
+          <p>
+            Development of enterprise apps, including complex ERP, CRM, HRM,
+            automated billing and payment system
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <img
+            src="https://uploads-ssl.webflow.com/5c98c492f5786d415aa3c82d/5d2f16a05699e9ec34fe0f66_Startup%20solutions_hover.svg"
+            alt="development"
+            class="smt-link-card__img"
+          /><br />
+
+          <h5>MVPS FOR STARTUPS</h5>
+          <br />
+
+          <p>
+            Helping startups and small business to make prototypes and Minimum
+            viable Product ready to enter the market.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <img
+            src="https://uploads-ssl.webflow.com/5c98c492f5786d415aa3c82d/5d2f16a046b3c58b925da4d8_WEB%20APPS%20DEVELOPMENT_hover.svg"
+            alt="mobile"
+            class="smt-link-card__img"
+          /><br />
+
+          <h5>WEB APPS DEVELOPMENT</h5>
+          <br />
+
+          <p>
+            Creating scalable appilications for business in a variety of
+            domains-eLearning and more.
+          </p>
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <img
+            src="https://uploads-ssl.webflow.com/5c98c492f5786d415aa3c82d/5d2f169e4904ea18166b7c75_Mobile%20Applications_hover.svg"
+            alt="application"
+            class="smt-link-card__img"
+          /><br />
+
+          <h5>MOBILE APPLICATIONS</h5>
+          <br />
+
+          <p>
+            Creating multifunctional and user-friendly iOS and Android
+            appilcations to get the utmost from mobile world.
+          </p>
+          <br /><br />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <img
+            src="https://uploads-ssl.webflow.com/5c98c492f5786d415aa3c82d/5d2f169e4a77d850353caaef_Internet%20of%20Things_hover.svg"
+            alt="mobile"
+            class="smt-link-card__img"
+          /><br />
+
+          <h5>INTERNET OF THINGS</h5>
+          <br />
+
+          <p>
+            Building ioT applications for big data gathering, analyzing, and
+            sharing. We make predictive decision-making possible.
+          </p>
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <img
+            src="https://uploads-ssl.webflow.com/5c98c492f5786d415aa3c82d/5d2f169f4904ea0c776b7c76_SaaS%20Development_hover.svg"
+            alt="saas"
+            class="smt-link-card__img"
+          /><br />
+
+          <h5>SAAS PRODUCT DEVELOPMENT</h5>
+          <br />
+
+          <p>
+            Designing custom SaaS products for companies,enabling them to shift
+            activities to cloud, integrate, and reduce costs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+
+  <div class="row">
+    <div class="col-sm-4">
+      <div class=""></div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <img
+            src="https://uploads-ssl.webflow.com/5c98c492f5786d415aa3c82d/5d2c8d2a2be6ba93a2dad25c_CHATBOT%20DEVELOPMENT_hover.svg"
+            alt="chatbot"
+            class="smt-link-card__img"
+          /><br />
+
+          <h5>CHATBOT DEVELOPMENT</h5>
+          <br />
+
+          <p>
+            Planning and development of custom unique chatbots integrated with
+            popular social messangers, Facebook, Slack, Skype.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div>
+
+<section
+  class="jumbotron text-center"
+  style="margin-top: 35px;background-color: #005688;color: black"
+>
+  <div class="login-container">
+    <form action="#">
+      <p class="jumbotron-heading" style="color:#fff">
+        <b>"LET'S DISCUSS YOUR PROJECT"</b>
+      </p>
+
+      <hr class="outline1" />
+      <div class="con">
+        <input type="text" placeholder="Name" name="Name" />
+        <input type="text" placeholder="Email" name="Email" />
+        <button
+          type="button"
+          class="btn bbt btn-light btn-rounded waves-effect"
+        >
+          Lets Talk</button
+        ><br />
+      </div>
+      <label class="w-checkbox smt-check">
+        <input
+          type="checkbox"
+          id="user-agree-cform-short"
+          name="checkbox"
+          data-name="checkbox"
+          required
+          class="w-checkbox-input smt-check_hidden"
+          arid-required="true"
+        />
+
+        <span class="smt-check__yext smt-check__text--dark w-form-label"
+          >I agree with</span
+        >
+
+        <a
+          href="/privacy-policy"
+          class="smt-check__text-line"
+          style="color:#fff"
+          >Privacy Policy</a
+        >
+      </label>
+    </form>
+  </div>
+</section>
+<hr />
+<br /><br />
+<div>
+  <h2 class="font-weight-bold text-center">Latest Tech We Apply</h2>
+
+  <hr class="outline3" />
+</div>
+<div class="container">
+  <div
+    class="row"
+    *ngFor="let row of techRows | async"
+    style="margin-bottom: 15px; display: flex; justify-content: center;"
+  >
+    <div class="col-sm-4" *ngFor="let card of row">
+      <div class="card">
+        <div class="card-body text-center">
+          <img
+            [src]="card.img"
+            [alt]="card.imgAlt"
+            class="smt-link-card__img"
+          /><br />
+
+          <h5>{{ card.heading }}</h5>
+          <br />
+
+          <p>
+            {{ card.content }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <img
+            src="https://uploads-ssl.webflow.com/5c98c492f5786d415aa3c82d/5d2f169c4a77d8a7913caaea_Artificial%20Intelligence_hover.svg"
+            alt="application"
+            class="smt-link-card__img"
+          /><br />
+
+          <h5>ARTIFICIAL INTELLIGENCE</h5>
+          <br />
+
+          <p>
+            Adding value by building reliable and top-tier Al-based solution for
+            a variety of business domains: finance: healthcare, education.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <img
+            src="https://uploads-ssl.webflow.com/5c98c492f5786d415aa3c82d/5d2f169c46b3c513195da4d4_Blockchain_hover.svg"
+            alt="application"
+            class="smt-link-card__img"
+          /><br />
+
+          <h5>BLOCKCHAIN</h5>
+          <br />
+
+          <p>
+            Facilitating component from multiple industries to take full
+            advantage of blockchain solutions. while supporting security.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <img
+            src="https://uploads-ssl.webflow.com/5c98c492f5786d415aa3c82d/5d2f169c4a77d8c8723caaeb_Big%20Data%20_%20Data%20Science_hover.svg"
+            alt="development"
+            class="smt-link-card__img"
+          /><br />
+
+          <h5>BIG DATA & DATA SCIENCE</h5>
+          <br />
+
+          <p>
+            Developing big data solutions to enable businesses to gain insights
+            from advanced data analyrics reach clarity and transparency.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+
+  <div class="row">
+    <div class="col-sm-4">
+      <div class=""></div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body text-center">
+          <img
+            src="https://uploads-ssl.webflow.com/5c98c492f5786d415aa3c82d/5d2f169e5699e91e6afe0f62_Machine%20Learning_hover.svg"
+            alt=""
+            class="smt-link-card__img"
+          /><br />
+
+          <h5>MACHINE LEARNING</h5>
+          <br />
+
+          <p>
+            Integrating machine learning in custom software to enhance accurate
+            forecasts and data-driven decisions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div>
+
+<!-- footer -->
+<footer class="text-light f1">
+  <div class="container-fluid">
+    <div class="row vdivide">
+      <div class="col-md-4 col-lg-4 col-xl-4">
+        <h5>BLOGS</h5>
+
+        <p style="color:white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+          sequi est sit quod
+        </p>
+        <br />
+        <p style="color:white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+          sequi est sit quod
+        </p>
+        <hr class="mx-auto" />
+        <div class="row">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4 ml-3">
+            Edunomics Tech Solution
+          </h5>
+          <p style="margin-left: 15%;color:white">contact@edunomics.in</p>
+        </div>
+        <hr />
+        <p style="margin-left: 15%;color:white">BUSINESS HOURS <br />24*7</p>
+        <hr />
+        <!-- Social buttons -->
+        <div class="row">
+          <span>
+            <p class="edu">2019 : Edunomics</p>
+          </span>
+          <div>
+            <ul class="list-unstyled lu list-inline text-center">
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="fb" mdbWavesEffect>
+                  <mdb-icon fab icon="facebook"></mdb-icon>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="tw" mdbWavesEffect>
+                  <mdb-icon fab icon="twitter"></mdb-icon>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="gplus" mdbWavesEffect>
+                  <mdb-icon fab fab icon="google-plus"></mdb-icon>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="li" mdbWavesEffect>
+                  <mdb-icon fab icon="linkedin"></mdb-icon>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="wh" mdbWavesEffect>
+                  <mdb-icon fab icon="whatsapp"></mdb-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Social buttons -->
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+        <h5>SERVICES</h5>
+
+        <ul class="list-unstyled">
+          <li><a routerLink="/come">Custom Software Development</a></li>
+          <li><a routerLink="/come"> Mobile Software Development</a></li>
+          <li><a routerLink="/come">Software Prototyping</a></li>
+          <li><a routerLink="/come"> Dedicated Development Teams</a></li>
+          <li><a routerLink="/come">Software Maintenance Program</a></li>
+          <li><a routerLink="/come">Software Product Development</a></li>
+          <li><a routerLink="/come">Quality Assurance</a></li>
+          <li><a routerLink="/come">Legacy Software Migration</a></li>
+          <li><a routerLink="/come"> DevOps Automation</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+        <h5>SOLUTIONS</h5>
+
+        <ul class="list-unstyled">
+          <li><a routerLink="/come">DMS</a></li>
+          <li><a routerLink="/come">SMS</a></li>
+          <li><a routerLink="/come">CMS</a></li>
+          <li><a routerLink="/come">IOT</a></li>
+          <li><a routerLink="/come">Mobile</a></li>
+          <li><a routerLink="/come">Web Applications</a></li>
+          <li><a routerLink="/come">Cost Finder</a></li>
+          <li><a routerLink="/come">Tracking</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a routerLink="/career">- Career</a></li>
+          <li><a routerLink="/Affiliate-Programme">- Affiliate Program</a></li>
+          <li><a routerLink="/about">- About Us</a></li>
+          <li><a routerLink="how-we-work">- How we work</a></li>
+          <li><a routerLink="/come">- Startups</a></li>
+          <li><a routerLink="/blog">- Blog</a></li>
+          <li><a routerLink="/contact">- Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 ">
+        <h5>INDUSTRY</h5>
+
+        <ul class="list-unstyled">
+          <li><a routerLink="/come">Education</a></li>
+          <li><a routerLink="/come">Retail & Wholesale</a></li>
+          <li><a routerLink="/come">Construction</a></li>
+          <li><a routerLink="/come">Transpotation</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <hr />
+  <div class="navbar navbar-expand-md navbar-fixed-bottom">
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="/solution">Solution</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/service">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<footer class="text-light f2">
+  <div class="container">
+    <h5 class="font-weight-bold" style="text-align: center;  margin-left:10px;">
+      Edunomics Tech Solution
+    </h5>
+    <h6 style="text-align: center;">9082626356</h6>
+    <h6 style="text-align: center;">Business Hours</h6>
+    <p style="text-align: center;">24*7</p>
+    <h6 style="text-align: center;">contact@edunomics.in</h6>
+    <hr />
+    <h5 class="font-weight-bold" style="text-align: center;">Quick Links</h5>
+    <a class="nav-link" routerLink="/about"
+      ><h6 style="text-align: center;">About Us</h6></a
+    >
+    <a class="nav-link" routerLink="/team"
+      ><h6 style="text-align: center;">Our Team</h6></a
+    >
+    <a class="nav-link" routerLink="/blog"
+      ><h6 style="text-align: center;">Our Blog</h6></a
+    >
+    <a class="nav-link" routerLink="/solution"
+      ><h6 style="text-align: center;">Solution</h6></a
+    >
+    <hr />
+
+    <!-- Social buttons -->
+    <div class="row row1">
+      <div class="col-sm-6 column">
+        <p class="">2019 : Edunomics</p>
+      </div>
+      <div class="col-sm-6 column">
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a mdbBtn floating="true" color="fb" mdbWavesEffect>
+              <mdb-icon fab icon="facebook"></mdb-icon>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a mdbBtn floating="true" color="tw" mdbWavesEffect>
+              <mdb-icon fab icon="twitter"></mdb-icon>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a mdbBtn floating="true" color="gplus" mdbWavesEffect>
+              <mdb-icon fab fab icon="google-plus"></mdb-icon>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a mdbBtn floating="true" color="li" mdbWavesEffect>
+              <mdb-icon fab icon="linkedin"></mdb-icon>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <!-- <a routerLink="#" mdbBtn floating="true" color="wh" mdbWavesEffect>
+        <mdb-icon fab icon="whatsapp"></mdb-icon>
+      </a> -->
+            <a href="https://wa.me/908262356" target="_blank"
+              ><mdb-icon class="whats" fab icon="whatsapp"></mdb-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Social buttons -->
+  </div>
+
+  <hr />
+  <!-- Copyright -->
+</footer>
+<div class="row last1 fixed-bottom">
+  <div class="col-sm-6">
+    <!-- <a mdbBtn floating="true" color="wh" mdbWavesEffect>
+            
+          </a>  -->
+    <a href="https://wa.me/908262356" target="_blank"
+      ><mdb-icon class="whats" fab icon="whatsapp"></mdb-icon
+    ></a>
+    <span>
+      <a mdbBtn floating="true" color="ph" mdbWavesEffect>
+        <mdb-icon class="phone" fas icon="phone-volume"></mdb-icon></a
+    ></span>
+  </div>
+</div>

@@ -1,0 +1,442 @@
+<section
+  class="jumbotron text-center"
+  style="background-color: #005688;color: white"
+>
+  <div class="container">
+    <h1 class="jumbotron-heading" style="margin-top: 35px;"><b>About Us</b></h1>
+
+    <hr class="outline" />
+  </div>
+</section>
+
+<!-- about us -->
+
+<div class="container text-center">
+  <p>
+    Let’s face it. Most people hate the software they use at work.<br />
+
+    Business software is clunky, expensive, hard to setup and frustrating to
+    use. Countless hours are wasted trying to customize these solutions and they
+    often require expensive professional services to get everything to work. In
+    the end, the solution becomes so complex that businesses need to hire
+    full-time employees to babysit the software.<br />
+
+    At Edunomics, we believe your business deserves better software - software
+    that’s ready to go, easy to setup and use, and requires minimal
+    customization. All of our products live up to this promise and are backed by
+    our world-class support. And the best part is, you don’t have to break the
+    bank to get them working.<br />
+
+    Today, over 150,000 companies trust our software to run their business. We
+    believe it’s just the beginning.
+  </p>
+</div>
+
+<hr />
+<br /><br />
+
+<!-- timeline -->
+<!-- 
+  <section id="cd-timeline" class="cd-container">
+
+    <div class="cd-timeline-block">
+
+      <div class="cd-timeline-img cd-picture">
+
+        <img src="https://website-assets-fw.freshworks.com/attachments/cjn184wi500049mfzwu1a5zl5-event1.full.png" alt="Picture">
+
+        
+
+ 
+
+      </div>
+
+ 
+
+      <div class="cd-timeline-content">
+
+      
+
+        <p>A bad customer experience due to a broken TV sparks off the idea for Edunomics.</p>
+
+        <span class="cd-date">Jan 14</span>
+
+      </div> 
+
+    </div>
+
+ 
+
+    <div class="cd-timeline-block">
+
+      <div class="cd-timeline-img cd-movie">
+
+        <img src="https://website-assets-fw.freshworks.com/attachments/cjn1859mu000f0rg01e5dxezm-freshdesk.full.png" alt="Movie">
+
+      </div> 
+
+ 
+
+      <div class="cd-timeline-content">
+
+        <p>Edunomics is officially born. Girish and Shan start working on the first prototype of the product.</p>
+
+        <span class="cd-date">Jan 18</span>
+
+      </div>
+
+    </div> 
+
+ 
+
+    <div class="cd-timeline-block">
+
+      <div class="cd-timeline-img cd-picture">
+
+        <img src="https://website-assets-fw.freshworks.com/attachments/cjn1858pp000f9mfzdzk0oux4-event3.full.png" alt="Picture">
+
+      </div>
+
+ 
+
+      <div class="cd-timeline-content">
+
+        <p>Edunomics is launched publicly and four days later, we sign our first customer - Atwell College, Australia.</p>
+
+        <span class="cd-date">Jan 24</span>
+
+      </div> 
+
+    </div> 
+
+ 
+
+    <div class="cd-timeline-block">
+
+      <div class="cd-timeline-img cd-location">
+
+        <img src="https://website-assets-fw.freshworks.com/attachments/cjn185c9e000m08g0vvai1mvy-event4.full.png" alt="Location">
+
+      </div>
+
+ 
+
+      <div class="cd-timeline-content">
+
+        <p>Edunomics wins $40,000 at the Microsoft BizSpark Startup challenge.</p>
+
+        <span class="cd-date">Feb 14</span>
+
+      </div> 
+
+    </div> 
+
+
+
+    <div class="cd-timeline-block">
+
+      <div class="cd-timeline-img cd-location">
+
+        <img src="https://website-assets-fw.freshworks.com/attachments/cjn1859qg000t9mfzoyliwwih-event5.full.png" alt="Location">
+
+      </div> 
+
+ 
+
+      <div class="cd-timeline-content">
+
+        <p>Edunomics raises its first round of funding worth $1 million from Accel Partners.</p>
+
+        <span class="cd-date">Feb 18</span>
+
+      </div>
+
+    </div> 
+
+ 
+
+    <div class="cd-timeline-block">
+
+      <div class="cd-timeline-img cd-movie">
+
+        <img src="https://website-assets-fw.freshworks.com/attachments/cjn185afa000d08g07f9tt7yc-event6.full.png" alt="Movie">
+
+      </div>
+
+ 
+
+      <div class="cd-timeline-content">
+
+        <p>Edunomics becomes Tiger Global's first investment in the SaaS space, and raises its second round of funding worth $5 million from both Tiger Global and existing investors, Accel Partners.</p>
+
+        <span class="cd-date">Feb 26</span>
+
+      </div> 
+
+    </div> 
+
+  </section>  -->
+
+<div class="container text-center pt-4">
+  <!--Section heading-->
+
+  <h2 class="h2 font-weight-bold">Our Advantages</h2>
+
+  <hr class="outline1" />
+</div>
+
+<div class="container text-center pt-5 pb-5">
+  <div
+    class="row"
+    *ngFor="let row of rows | async"
+    style="display: flex; justify-content: center;"
+  >
+    <div class="col-sm-4" *ngFor="let card of row">
+      <mdb-icon
+        fas
+        [icon]="card.icon"
+        class="fa-2x blue-text pr-3 pb-3"
+      ></mdb-icon>
+
+      <p style="font-size: 20px ">
+        <b>{{ card.heading }}</b>
+      </p>
+
+      <p>
+        {{ card.para }}
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="text-light f1">
+  <div class="container-fluid">
+    <div class="row vdivide">
+      <div class="col-md-4 col-lg-4 col-xl-4">
+        <h5>BLOGS</h5>
+
+        <p style="color:white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+          sequi est sit quod
+        </p>
+        <br />
+        <p style="color:white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+          sequi est sit quod
+        </p>
+        <hr class="mx-auto" />
+        <div class="row">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4 ml-3">
+            Edunomics Tech Solution
+          </h5>
+          <p style="margin-left: 15%;color:white">contact@edunomics.in</p>
+        </div>
+        <hr />
+        <p style="margin-left: 15%;color:white">BUSINESS HOURS <br />24*7</p>
+        <hr />
+        <!-- Social buttons -->
+        <div class="row">
+          <span>
+            <p class="edu">2019 : Edunomics</p>
+          </span>
+          <div>
+            <ul class="list-unstyled lu list-inline text-center">
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="fb" mdbWavesEffect>
+                  <mdb-icon fab icon="facebook"></mdb-icon>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="tw" mdbWavesEffect>
+                  <mdb-icon fab icon="twitter"></mdb-icon>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="gplus" mdbWavesEffect>
+                  <mdb-icon fab fab icon="google-plus"></mdb-icon>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="li" mdbWavesEffect>
+                  <mdb-icon fab icon="linkedin"></mdb-icon>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="wh" mdbWavesEffect>
+                  <mdb-icon fab icon="whatsapp"></mdb-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Social buttons -->
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+        <h5>SERVICES</h5>
+
+        <ul class="list-unstyled">
+          <li><a routerLink="/come">Custom Software Development</a></li>
+          <li><a routerLink="/come"> Mobile Software Development</a></li>
+          <li><a routerLink="/come">Software Prototyping</a></li>
+          <li><a routerLink="/come"> Dedicated Development Teams</a></li>
+          <li><a routerLink="/come">Software Maintenance Program</a></li>
+          <li><a routerLink="/come">Software Product Development</a></li>
+          <li><a routerLink="/come">Quality Assurance</a></li>
+          <li><a routerLink="/come">Legacy Software Migration</a></li>
+          <li><a routerLink="/come"> DevOps Automation</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+        <h5>SOLUTIONS</h5>
+
+        <ul class="list-unstyled">
+          <li><a routerLink="/come">DMS</a></li>
+          <li><a routerLink="/come">SMS</a></li>
+          <li><a routerLink="/come">CMS</a></li>
+          <li><a routerLink="/come">IOT</a></li>
+          <li><a routerLink="/come">Mobile</a></li>
+          <li><a routerLink="/come">Web Applications</a></li>
+          <li><a routerLink="/come">Cost Finder</a></li>
+          <li><a routerLink="/come">Tracking</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a routerLink="/career">- Career</a></li>
+          <li><a routerLink="/Affiliate-Programme">- Affiliate Program</a></li>
+          <li><a routerLink="/about">- About Us</a></li>
+          <li><a routerLink="how-we-work">- How we work</a></li>
+          <li><a routerLink="/come">- Startups</a></li>
+          <li><a routerLink="/blog">- Blog</a></li>
+          <li><a routerLink="/whitepaper">- White Paper</a></li>
+          <li><a routerLink="/contact">- Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 ">
+        <h5>INDUSTRY</h5>
+
+        <ul class="list-unstyled">
+          <li><a routerLink="/come">Education</a></li>
+          <li><a routerLink="/come">Retail & Wholesale</a></li>
+          <li><a routerLink="/come">Construction</a></li>
+          <li><a routerLink="/come">Transpotation</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <hr />
+  <div class="navbar navbar-expand-md navbar-fixed-bottom">
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="/solution">Solution</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/service">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<footer class="text-light f2">
+  <div class="container">
+    <h5 class="font-weight-bold" style="text-align: center;  margin-left:10px;">
+      Edunomics Tech Solution
+    </h5>
+    <h6 style="text-align: center;">9082626356</h6>
+    <h6 style="text-align: center;">Business Hours</h6>
+    <p class="e" style="text-align: center;">24*7</p>
+    <h6 style="text-align: center;">contact@edunomics.in</h6>
+    <hr />
+    <h5 class="font-weight-bold" style="text-align: center;">Quick Links</h5>
+    <a class="nav-link" routerLink="/about"
+      ><h6 style="text-align: center;">About Us</h6></a
+    >
+    <a class="nav-link" routerLink="/team"
+      ><h6 style="text-align: center;">Our Team</h6></a
+    >
+    <a class="nav-link" routerLink="/blog"
+      ><h6 style="text-align: center;">Our Blog</h6></a
+    >
+    <a class="nav-link" routerLink="/solution"
+      ><h6 style="text-align: center;">Solution</h6></a
+    >
+    <hr />
+
+    <!-- Social buttons -->
+    <div class="row row1">
+      <div class="col-sm-6 column">
+        <p class="e1">2019 : Edunomics</p>
+      </div>
+      <div class="col-sm-6 column">
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a mdbBtn floating="true" color="fb" mdbWavesEffect>
+              <mdb-icon fab icon="facebook"></mdb-icon>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a mdbBtn floating="true" color="tw" mdbWavesEffect>
+              <mdb-icon fab icon="twitter"></mdb-icon>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a mdbBtn floating="true" color="gplus" mdbWavesEffect>
+              <mdb-icon fab fab icon="google-plus"></mdb-icon>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a mdbBtn floating="true" color="li" mdbWavesEffect>
+              <mdb-icon fab icon="linkedin"></mdb-icon>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <!-- <a routerLink="#" mdbBtn floating="true" color="wh" mdbWavesEffect>
+        <mdb-icon fab icon="whatsapp"></mdb-icon>
+      </a> -->
+            <mdb-icon class="whats" fab icon="whatsapp"></mdb-icon>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Social buttons -->
+  </div>
+
+  <hr />
+  <!-- Copyright -->
+</footer>
+<div class="row last1 fixed-bottom">
+  <span>
+    <a mdbBtn floating="true" color="ph" mdbWavesEffect>
+      <mdb-icon class="phone" fas icon="phone-volume"></mdb-icon
+    ></a>
+  </span>
+  <span>
+    <a routerLink="/solution" class="ser">Solution</a>
+  </span>
+  <span>
+    <a routerLink="/service" class="ser1">Service</a>
+  </span>
+  <span>
+    <a href="https://wa.me/908262356" target="_blank"
+      ><mdb-icon class="whatss" fab icon="whatsapp"></mdb-icon
+    ></a>
+  </span>
+</div>

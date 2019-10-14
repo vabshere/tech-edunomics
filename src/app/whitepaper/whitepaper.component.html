@@ -1,0 +1,395 @@
+<section
+  class="jumbotron text-center"
+  style="background-color: #005688;color: white"
+>
+  <div class="container">
+    <h1 class="jumbotron-heading" style="margin-top: 35px;">
+      <b>White Paper</b>
+    </h1>
+
+    <hr class="outline" />
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div *ngFor="let whitePaper of whitePapers | async">
+            <h1 class="aa">{{whitePaper.heading}}</h1>
+            <hr />
+            <p>
+              {{whitePaper.para}}
+            </p>
+        </div>
+          <!-- <div>
+          <h1 class="aa">The App Approach – How To Do It Best!</h1>
+          <hr />
+          <p>
+            One of our clients, a trade association wanted an app for better
+            personalization and smooth information delivery within their
+            employees and business associates to integrate their processes
+            further. The organized meetings and events could be viewed on Google
+            Maps which helped the client.
+          </p>
+        </div>
+        <div>
+          <h1 class="aa">
+            A strategic digital approach to accreditation enablement
+          </h1>
+          <hr />
+          <p>
+            Accreditation is a very complex process which involves submission of
+            application fees, documentation and a thorough assessment by
+            technical and subject matter experts of the Accredited Certification
+            Bodies also called as the Accredited Agencies. When done manually,
+            this process is very time consuming and effort intensive.
+          </p>
+        </div>
+
+        <h1 class="aa">
+          Have you done your application UI/UX revamp all wrong?
+        </h1>
+        <hr />
+        <p>
+          One of our clients, who is a leading provider of enterprise solutions
+          to life sciences companies, reached out to us to redesign the UI and
+          UX for an enterprise product. This product was directed towards life
+          sciences companies and was designed to help them track expenses
+          incurred for healthcare.
+        </p>
+
+        <h1 class="aa">Fast-tracking the app economy with ServiceNow apps</h1>
+        <hr />
+        <p>
+          ServiceNow apps that we developed were created with two things in mind
+          – one, that they have to simple, intuitive and user-friendly interface
+          so that the non-technical business user can leverage and benefit from
+          it and two, that we give organizations a path to respond to market
+          needs swiftly.
+        </p>
+        <h1 class="aa">Business Transformation with ServiceNow</h1>
+        <hr />
+        <p>
+          Every business is either digitally transformed, in transition or
+          planning to transform. We cannot ignore the power of ServiceNow, a
+          leading Service Management Platform, that is being used by thousands
+          of global enterprises worldwide as a platform of their choice for
+          their digital transformation initiatives.
+        </p>
+
+        <h1 class="aa">
+          The Business Value of Cloud – Agility, Innovation, Cost Optimization
+        </h1>
+        <hr />
+        <p>
+          While the overall software market is growing at around 6% per annum,
+          as per IDC, for Cloud, the growth rate is 20% per annum. Most of the
+          enterprise are adopting the cloud-first approach. In this crisp guide
+          by Edunomics, we try to provide an overview on the real business
+          value…
+        </p>
+
+        <h1 class="aa">
+          <b>The Why and How of Digital Transformation for SDOs.</b>
+        </h1>
+        <hr />
+        <p>
+          With an increased focus on digitization across all industries, the
+          age-old SDO industry is also focusing on riding on the digital wave.
+          However, the digitization initiatives of SDOs are extremely complex
+          and involve several activities such as conversion of legacy codes and
+          standards, content delivery and management, digital selling etc.
+        </p>
+
+        <h1 class="aa"><b>The Hidden Power of ServiceNow Apps</b></h1>
+        <hr />
+        <p>
+          ServiceNow is an extremely flexible, highly configurable and scalable
+          cloud application platform which allows users its users to achieve a
+          lot more through platform apart from standard features.
+        </p>
+        <h1 class="aa"><b>We make storage provisioning easy</b></h1>
+        <hr />
+        <p>
+          Storage provisioning is the process or mechanism to allocate and
+          assign server storage space within a networked computing environment
+          to optimize the performance of storage network.
+        </p>
+
+        <h1 class="aa"><b>Your Comprehensive DevOps guide</b></h1>
+        <hr />
+        <p>
+          While the DevOps adoption and practices have matured and DevOps is set
+          to become a standard way of working, there is still some confusion in
+          the minds of enterprises as to what exactly is DevOps and how to make
+          it a success.
+        </p>
+
+        <h1 class="aa">
+          <b>Delivering True Business Impact with Test Automation.</b>
+        </h1>
+        <hr />
+        <p>
+          Conventional testing is dead. At the same time, the demand for higher
+          quality products is ever increasing. Digital technologies are
+          fundamentally transforming businesses and the expectations of
+          digitally empowered consumers.
+        </p> -->
+      </div>
+
+      <div class="col-sm-4">
+        <div class="container">
+          <form class="para jumbotron">
+            <h1 class="pp">Experience WOW!</h1>
+            <p class="qq">Get in touch with us.</p>
+            <label for="fname">Full Name</label><br />
+            <input type="text" name="fname" placeholder="" /><br />
+            <label for="email">Email*</label><br />
+            <input type="email" name="email" placeholder="" /><br />
+            <label for="number">Phone Number</label><br />
+            <input type="number" name="num" placeholder="" /><br />
+            <label for="company">Company</label><br />
+            <input type="company" name="company" placeholder="" /><br />
+            <label for="captcha">Captcha*</label><br />
+            <input type="captcha" name="captch" placeholder="" /><br />
+            <button
+              type="button"
+              class="btn bbt btn-outline-red btn-rounded waves-effect"
+            >
+              DOWNLOAD WHITE PAPER
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer class="text-light f1">
+  <div class="container-fluid">
+    <div class="row vdivide">
+      <div class="col-md-4 col-lg-4 col-xl-4">
+        <h5>BLOGS</h5>
+
+        <p style="color:white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+          sequi est sit quod
+        </p>
+        <br />
+        <p style="color:white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+          sequi est sit quod
+        </p>
+        <hr class="mx-auto" />
+        <div class="row">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4 ml-3">
+            Edunomics Tech Solution
+          </h5>
+          <p style="margin-left: 15%;color:white">contact@edunomics.in</p>
+        </div>
+        <hr />
+        <p style="margin-left: 15%;color:white">BUSINESS HOURS <br />24*7</p>
+        <hr />
+        <!-- Social buttons -->
+        <div class="row">
+          <span>
+            <p class="edu">2019 : Edunomics</p>
+          </span>
+          <div>
+            <ul class="list-unstyled lu list-inline text-center">
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="fb" mdbWavesEffect>
+                  <mdb-icon fab icon="facebook"></mdb-icon>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="tw" mdbWavesEffect>
+                  <mdb-icon fab icon="twitter"></mdb-icon>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="gplus" mdbWavesEffect>
+                  <mdb-icon fab fab icon="google-plus"></mdb-icon>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="li" mdbWavesEffect>
+                  <mdb-icon fab icon="linkedin"></mdb-icon>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="wh" mdbWavesEffect>
+                  <mdb-icon fab icon="whatsapp"></mdb-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Social buttons -->
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+        <h5>SERVICES</h5>
+
+        <ul class="list-unstyled">
+          <li><a routerLink="/come">Custom Software Development</a></li>
+          <li><a routerLink="/come"> Mobile Software Development</a></li>
+          <li><a routerLink="/come">Software Prototyping</a></li>
+          <li><a routerLink="/come"> Dedicated Development Teams</a></li>
+          <li><a routerLink="/come">Software Maintenance Program</a></li>
+          <li><a routerLink="/come">Software Product Development</a></li>
+          <li><a routerLink="/come">Quality Assurance</a></li>
+          <li><a routerLink="/come">Legacy Software Migration</a></li>
+          <li><a routerLink="/come"> DevOps Automation</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+        <h5>SOLUTIONS</h5>
+
+        <ul class="list-unstyled">
+          <li><a routerLink="/come">DMS</a></li>
+          <li><a routerLink="/come">SMS</a></li>
+          <li><a routerLink="/come">CMS</a></li>
+          <li><a routerLink="/come">IOT</a></li>
+          <li><a routerLink="/come">Mobile</a></li>
+          <li><a routerLink="/come">Web Applications</a></li>
+          <li><a routerLink="/come">Cost Finder</a></li>
+          <li><a routerLink="/come">Tracking</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a routerLink="/career">- Career</a></li>
+          <li><a routerLink="/Affiliate-Programme">- Affiliate Program</a></li>
+          <li><a routerLink="/about">- About Us</a></li>
+          <li><a routerLink="how-we-work">- How we work</a></li>
+          <li><a routerLink="/come">- Startups</a></li>
+          <li><a routerLink="/blog">- Blog</a></li>
+          <li><a routerLink="/contact">- Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 ">
+        <h5>INDUSTRY</h5>
+
+        <ul class="list-unstyled">
+          <li><a routerLink="/come">Education</a></li>
+          <li><a routerLink="/come">Retail & Wholesale</a></li>
+          <li><a routerLink="/come">Construction</a></li>
+          <li><a routerLink="/come">Transpotation</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <hr />
+  <div class="navbar navbar-expand-md navbar-fixed-bottom">
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="/solution">Solution</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/service">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<footer class="text-light f2">
+  <div class="container">
+    <h5 class="font-weight-bold" style="text-align: center;  margin-left:10px;">
+      Edunomics Tech Solution
+    </h5>
+    <h6 style="text-align: center;">9082626356</h6>
+    <h6 style="text-align: center;">Business Hours</h6>
+    <p style="text-align: center;">24*7</p>
+    <h6 style="text-align: center;">contact@edunomics.in</h6>
+    <hr />
+    <h5 class="font-weight-bold" style="text-align: center;">Quick Links</h5>
+    <a class="nav-link" routerLink="/about"
+      ><h6 style="text-align: center;">About Us</h6></a
+    >
+    <a class="nav-link" routerLink="/team"
+      ><h6 style="text-align: center;">Our Team</h6></a
+    >
+    <a class="nav-link" routerLink="/blog"
+      ><h6 style="text-align: center;">Our Blog</h6></a
+    >
+    <a class="nav-link" routerLink="/solution"
+      ><h6 style="text-align: center;">Solution</h6></a
+    >
+    <hr />
+
+    <!-- Social buttons -->
+    <div class="row row1">
+      <div class="col-sm-6 column">
+        <p class="">2019 : Edunomics</p>
+      </div>
+      <div class="col-sm-6 column">
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a mdbBtn floating="true" color="fb" mdbWavesEffect>
+              <mdb-icon fab icon="facebook"></mdb-icon>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a mdbBtn floating="true" color="tw" mdbWavesEffect>
+              <mdb-icon fab icon="twitter"></mdb-icon>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a mdbBtn floating="true" color="gplus" mdbWavesEffect>
+              <mdb-icon fab fab icon="google-plus"></mdb-icon>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a mdbBtn floating="true" color="li" mdbWavesEffect>
+              <mdb-icon fab icon="linkedin"></mdb-icon>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <!-- <a routerLink="#" mdbBtn floating="true" color="wh" mdbWavesEffect>
+      <mdb-icon fab icon="whatsapp"></mdb-icon>
+    </a> -->
+            <a href="https://wa.me/908262356" target="_blank"
+              ><mdb-icon class="whats" fab icon="whatsapp"></mdb-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Social buttons -->
+  </div>
+
+  <hr />
+  <!-- Copyright -->
+</footer>
+<div class="row last1 fixed-bottom">
+  <div class="col-sm-6">
+    <!-- <a mdbBtn floating="true" color="wh" mdbWavesEffect>
+          
+        </a>  -->
+    <a href="https://wa.me/908262356" target="_blank"
+      ><mdb-icon class="whats" fab icon="whatsapp"></mdb-icon
+    ></a>
+    <span>
+      <a mdbBtn floating="true" color="ph" mdbWavesEffect>
+        <mdb-icon class="phone" fas icon="phone-volume"></mdb-icon></a
+    ></span>
+  </div>
+</div>

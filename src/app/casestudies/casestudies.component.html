@@ -1,0 +1,313 @@
+<section
+  class="jumbotron text-center"
+  style="background-color: #005688;color: white"
+>
+  <div class="container">
+    <h1 class="jumbotron-heading" style="margin-top: 35px;">
+      <b>Case Studies</b>
+    </h1>
+
+    <hr class="outline" />
+  </div>
+</section>
+<section>
+  <div class="container">
+    <p class="aaa">CASE STUDIES AND PREVIOUS WORK</p>
+    <h1 class="ppp mb-3">
+      We build beautiful, secure & scalable products for Startups and
+      Enterprises.
+    </h1>
+    <p class="qqq mb-5">
+      We offer professional IT services to our clients by providing them with
+      creative and cutting-edge design and development. Our experienced team has
+      worked for big companies like Uber, Yahama, Samsung…. Check out the
+      complete list of all our previous work.
+    </p>
+  </div>
+</section>
+<!--card start1-->
+<section>
+  <div class="container">
+    <div
+      class="row"
+      *ngFor="let row of rows | async"
+      style="display: flex; justify-content: center;"
+    >
+      <div class="col-sm-4 mb-5" *ngFor="let card of row">
+        <!-- Card -->
+        <div class="card testimonial-card">
+          <!-- Background color -->
+          <div class="card-up indigo lighten-1"></div>
+
+          <!-- Avatar -->
+          <div class="avatar mx-auto white">
+            <img [src]="card.img" class="rounded-circle" [alt]="card.imgAlt" />
+          </div>
+
+          <!-- Content -->
+          <div class="card-body">
+            <!-- Name -->
+            <h4 class="card-title text-center">
+              <b>{{ card.heading }}</b>
+            </h4>
+            <hr />
+
+            <!-- Quotation -->
+            <p>
+              {{ card.para }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div
+    class="jumbotron text-center"
+    style="background-color: #005688;color: white"
+  >
+    <h2 class="text-center pt-5">
+      <b>A Future-proof, intuitive design, with better engineering</b>
+    </h2>
+
+    <button
+      type="button"
+      style="font-size:20px;"
+      class="btn bbt btn-outline-white btn-rounded waves-effect"
+    >
+      TALK TO AN EXPERT
+    </button>
+  </div>
+</section>
+
+<!-- footer -->
+<footer class="text-light f1">
+  <div class="container-fluid">
+    <div class="row vdivide">
+      <div class="col-md-4 col-lg-4 col-xl-4">
+        <h5>BLOGS</h5>
+
+        <p style="color:white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+          sequi est sit quod
+        </p>
+        <br />
+        <p style="color:white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+          sequi est sit quod
+        </p>
+        <hr class="mx-auto" />
+        <div class="row">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4 ml-3">
+            Edunomics Tech Solution
+          </h5>
+          <p style="margin-left: 15%;color:white">contact@edunomics.in</p>
+        </div>
+        <hr />
+        <p style="margin-left: 15%;color:white">BUSINESS HOURS <br />24*7</p>
+        <hr />
+        <!-- Social buttons -->
+        <div class="row">
+          <span>
+            <p class="edu">2019 : Edunomics</p>
+          </span>
+          <div>
+            <ul class="list-unstyled lu list-inline text-center">
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="fb" mdbWavesEffect>
+                  <mdb-icon fab icon="facebook"></mdb-icon>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="tw" mdbWavesEffect>
+                  <mdb-icon fab icon="twitter"></mdb-icon>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="gplus" mdbWavesEffect>
+                  <mdb-icon fab fab icon="google-plus"></mdb-icon>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="li" mdbWavesEffect>
+                  <mdb-icon fab icon="linkedin"></mdb-icon>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a mdbBtn floating="true" color="wh" mdbWavesEffect>
+                  <mdb-icon fab icon="whatsapp"></mdb-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Social buttons -->
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+        <h5>SERVICES</h5>
+
+        <ul class="list-unstyled">
+          <li><a routerLink="/come">Custom Software Development</a></li>
+          <li><a routerLink="/come"> Mobile Software Development</a></li>
+          <li><a routerLink="/come">Software Prototyping</a></li>
+          <li><a routerLink="/come"> Dedicated Development Teams</a></li>
+          <li><a routerLink="/come">Software Maintenance Program</a></li>
+          <li><a routerLink="/come">Software Product Development</a></li>
+          <li><a routerLink="/come">Quality Assurance</a></li>
+          <li><a routerLink="/come">Legacy Software Migration</a></li>
+          <li><a routerLink="/come"> DevOps Automation</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+        <h5>SOLUTIONS</h5>
+
+        <ul class="list-unstyled">
+          <li><a routerLink="/come">DMS</a></li>
+          <li><a routerLink="/come">SMS</a></li>
+          <li><a routerLink="/come">CMS</a></li>
+          <li><a routerLink="/come">IOT</a></li>
+          <li><a routerLink="/come">Mobile</a></li>
+          <li><a routerLink="/come">Web Applications</a></li>
+          <li><a routerLink="/come">Cost Finder</a></li>
+          <li><a routerLink="/come">Tracking</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a routerLink="/career">- Career</a></li>
+          <li><a routerLink="/Affiliate-Programme">- Affiliate Program</a></li>
+          <li><a routerLink="/about">- About Us</a></li>
+          <li><a routerLink="how-we-work">- How we work</a></li>
+          <li><a routerLink="/come">- Startups</a></li>
+          <li><a routerLink="/blog">- Blog</a></li>
+          <li><a routerLink="/whitepaper">- White Paper</a></li>
+
+          <li><a routerLink="/contact">- Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 ">
+        <h5>INDUSTRY</h5>
+
+        <ul class="list-unstyled">
+          <li><a routerLink="/come">Education</a></li>
+          <li><a routerLink="/come">Retail & Wholesale</a></li>
+          <li><a routerLink="/come">Construction</a></li>
+          <li><a routerLink="/come">Transpotation</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <hr />
+  <div class="navbar navbar-expand-md navbar-fixed-bottom">
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/solution">Solution</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/service">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/about">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<footer class="text-light f2">
+  <div class="container">
+    <h5 class="font-weight-bold" style="text-align: center;  margin-left:10px;">
+      Edunomics Tech Solution
+    </h5>
+    <h6 style="text-align: center;">9082626356</h6>
+    <h6 style="text-align: center;">Business Hours</h6>
+    <p style="text-align: center;">24*7</p>
+    <h6 style="text-align: center;">contact@edunomics.in</h6>
+    <hr />
+    <h5 class="font-weight-bold" style="text-align: center;">Quick Links</h5>
+    <a class="nav-link" routerLink="/about"
+      ><h6 style="text-align: center;">About Us</h6></a
+    >
+    <a class="nav-link" routerLink="/team"
+      ><h6 style="text-align: center;">Our Team</h6></a
+    >
+    <a class="nav-link" routerLink="/blog"
+      ><h6 style="text-align: center;">Our Blog</h6></a
+    >
+    <a class="nav-link" routerLink="/solution"
+      ><h6 style="text-align: center;">Solution</h6></a
+    >
+    <hr />
+
+    <!-- Social buttons -->
+    <div class="row row1">
+      <div class="col-sm-6 column">
+        <p class="">2019 : Edunomics</p>
+      </div>
+      <div class="col-sm-6 column">
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a mdbBtn floating="true" color="fb" mdbWavesEffect>
+              <mdb-icon fab icon="facebook"></mdb-icon>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a mdbBtn floating="true" color="tw" mdbWavesEffect>
+              <mdb-icon fab icon="twitter"></mdb-icon>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a mdbBtn floating="true" color="gplus" mdbWavesEffect>
+              <mdb-icon fab fab icon="google-plus"></mdb-icon>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a mdbBtn floating="true" color="li" mdbWavesEffect>
+              <mdb-icon fab icon="linkedin"></mdb-icon>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <!-- <a routerLink="#" mdbBtn floating="true" color="wh" mdbWavesEffect>
+        <mdb-icon fab icon="whatsapp"></mdb-icon>
+      </a> -->
+            <a href="https://wa.me/908262356" target="_blank"
+              ><mdb-icon class="whats" fab icon="whatsapp"></mdb-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Social buttons -->
+  </div>
+
+  <hr />
+  <!-- Copyright -->
+</footer>
+<div class="row last1 fixed-bottom">
+  <div class="col-sm-6">
+    <!-- <a mdbBtn floating="true" color="wh" mdbWavesEffect>
+            
+          </a>  -->
+    <a href="https://wa.me/908262356" target="_blank"
+      ><mdb-icon class="whats" fab icon="whatsapp"></mdb-icon
+    ></a>
+    <span>
+      <a mdbBtn floating="true" color="ph" mdbWavesEffect>
+        <mdb-icon class="phone" fas icon="phone-volume"></mdb-icon></a
+    ></span>
+  </div>
+</div>
